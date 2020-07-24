@@ -1,0 +1,10 @@
+setup.py
+flipper/__init__.py
+flipper/cli.py
+flipper/mysql.py
+flipper_sql.egg-info/PKG-INFO
+flipper_sql.egg-info/SOURCES.txt
+flipper_sql.egg-info/dependency_links.txt
+flipper_sql.egg-info/entry_points.txt
+flipper_sql.egg-info/requires.txt
+flipper_sql.egg-info/top_level.txt

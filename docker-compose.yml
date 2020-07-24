@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+
+  mysql:
+    image: mariadb:latest
+    restart: always
+    volumes:
+      # - ${PWD}/db-dump:/var/lib/mysql
+      - ${PWD}/db:/docker-entrypoint-initdb.d
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+  mysql_admin:
+    image: phpmyadmin/phpmyadmin:latest
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: root
+    ports:
+      - 8001:80
+
+networks:
+  default: {}

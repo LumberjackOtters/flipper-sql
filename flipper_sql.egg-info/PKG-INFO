@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: flipper-sql
+Version: 0.1.0
+Summary: flip your data
+Home-page: UNKNOWN
+Author: Alexandre LALUNG
+Author-email: alexandre.lalung@cpexterne.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=2.7,<3.0

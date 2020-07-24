@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "flipper-sql"
+version = "0.1.0"
+description = "flip your data"
+authors = ["Alexandre LALUNG <alexandre.lalung@cpexterne.org>"]
+packages = [
+    { include = "flipper" },
+]
+
+[tool.poetry.scripts]
+flipper = "flipper.cli:process"
+
+[tool.poetry.dependencies]
+python = "^2.7"
+click = "^7.1.2"
+funcy = "^1.14"
+pprint = "^0.1"
+mysql-connector-python = "^8.0.21"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
